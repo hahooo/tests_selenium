@@ -1,5 +1,6 @@
 *~
-venv/
-log/
-tmp/
-pid/
+/venv/
+/log/
+/tmp/
+/pid/
+/.pytest_cache/
