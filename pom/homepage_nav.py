@@ -15,8 +15,8 @@ class HomepageNav(SeleniumBase, Utils):
         self.__nav_links: str = '#mainNavigationFobs > li'
         self.NAV_LINKS_TEXT = 'Women,Men,Beauty,Home,Furniture,Shoes,Handbags,Jewelry,Kids,Toys,Gifts,Own Your Style,Sale'
 
-    def get_nav_links(self) -> List[WebElement]:
-        return self.are_visible('css', self.__nav_links, 'Header Navigation Links')
+    def get_nav_links(self, message='Header Navigation Links') -> List[WebElement]:
+        return self.are_visible('css', self.__nav_links, message)
 
     def get_nav_links_text(self) -> str:
         nav_links = self.get_nav_links()
